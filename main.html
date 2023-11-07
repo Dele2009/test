@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Delius+Unicase&family=Lemonada&family=Lobster&family=Lobster+Two:wght@700&family=Merriweather+Sans:ital,wght@1,300;1,500&family=Nosifer&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            padding-top: 100px;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background: rgb(222, 61, 8); */
+            background: white;
+            box-shadow: 0px 0px 15px black;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 10px;
+            animation: oken 2s ease-in-out 0s infinite alternate;
+            font-family: bungee spice;
+
+
+
+        }
+
+
+
+
+
+        * {
+            padding: ;
+            margin: 0;
+        }
+
+        .side {
+            /* background: repeating-linear-gradient(red, gold); */
+            background: white;
+            box-shadow: 2px 0px 15px black;
+            width: 200px;
+            position: fixed;
+            top: 0px;
+            left: ;
+
+
+        }
+
+        .fa-bars {
+            display: flex;
+            justify-content: center;
+            width: fit-content;
+            align-items: center;
+            position: fixed;
+            top: 8px;
+            left: 30px;
+            z-index: ;
+            background: white;
+            color: rgb(214, 57, 0);
+            padding: 5px 8px;
+            font-size: 25px;
+            box-shadow: 0px 0px 8px black;
+            border-radius: 10px;
+        }
+
+        .jig h2 {
+            display: none;
+        }
+
+        .side:hover nav {
+            display: block;
+
+
+
+
+        }
+
+
+
+
+        nav {
+
+            width: fit-content;
+
+            display: none;
+            position: relative;
+            top: 100px;
+            left: 0;
+
+        }
+
+        nav i {
+            margin: 0px 6px 0px 0px;
+        }
+
+        nav .drop {
+            list-style-type: none;
+            padding: 0;
+            width: fit-content;
+            height: 670px;
+            margin: 0px;
+
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .drop>li {
+            text-transform: uppercase;
+            margin-top: 50px;
+            margin-bottom: 60px;
+            margin-left: 30px;
+            color: rgb(214, 57, 0);
+        }
+        .drop>li:hover{
+            text-decoration: underline;
+        }
+        .drop li{
+            font-family: 'Merriweather Sans', sans-serif;
+        }
+
+
+
+
+
+
+        .dropdown {
+            list-style-type: none;
+            padding: 0;
+            /* background: repeating-linear-gradient(red, gold); */
+            background: white;
+            box-shadow: 0px 0px 10px black;
+            width: fit-content;
+            text-align: center;
+            display: none;
+            position: absolute;
+        }
+
+        .dropdown li {
+            text-transform: capitalize;
+
+            margin: 0px 0px 0px 0px;
+            padding: 10px;
+
+        }
+
+        .dropdown li:hover {
+            background-color: gray;
+
+        }
+
+        .drop li:hover .dropdown {
+            display: block;
+            position: absolute;
+            margin-left: 50px;
+        }
+        .buttons{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 0px;
+            margin: 0px 0px 0px 13px;
+            
+        }
+
+        button {
+            padding: 7px 12px;
+            background: orangered;
+            color: white;
+            border: 2px groove black;
+            font-size: 15px;
+        }
+
+        .pla {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            width: fit-content;
+            margin: 0px 10px 0px 10px;
+        }
+
+        .boy {
+            /* border: 0.001px solid rgba(0, 0, 0, 0.171); */
+
+            /* border-radius: 10px; */
+            box-shadow: 0px 0px 5px black;
+            padding: 10px;
+
+
+        }
+
+        .boy h2 {
+            text-align: center;
+            color: rgb(214, 57, 0);
+        }
+
+        .boy img {
+            width: 100%;
+
+
+        }
+
+        .boy img:hover {}
+
+
+        .boy h2{
+            display: block;
+            font-family: lemonada; 
+        }
+        .boy p {
+            display: block;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+        footer{
+            padding: 10px;
+            margin: 90px 0px 0px 0px ;
+            background: darkgray;
+            text-align: center;
+        }
+
+        @media screen and (max-width:768px) {
+            .pla {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 10px;
+                width: fit-content;
+                margin: auto;
+            }
+
+            .fa-bars {
+                display: flex;
+                justify-content: center;
+                width: fit-content;
+                align-items: center;
+                position: fixed;
+                top: 8px;
+                left: 30px;
+                z-index: ;
+                background: white;
+                padding: 5px 8px;
+                font-size: 20px;
+                box-shadow: 0px 0px 8px black;
+                border-radius: 10px;
+            }
+
+            header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* background: rgb(222, 61, 8); */
+                background: white;
+                box-shadow: 0px 0px 15px black;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                padding: 10px;
+                animation: oken 2s ease-in-out 0s infinite alternate;
+                font-family: bungee spice;
+                font-size: 12px;
+
+
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Travel Treasures</h1>
+    </header>
+
+
+
+    <div class="side">
+
+
+        <i class="fa-solid fa-bars"></i>
+
+        <nav>
+
+
+            <ul class="drop">
+                <li class="hover down"><a href="" class="dropa"><i
+                            class="fa-solid fa-earth-americas"></i>destinations</a>
+                    <ul class="dropdown">
+                        <li><a href="">asia</a></li>
+                        <li><a href="">africa</a></li>
+                        <li><a href="">europe</a></li>
+                        <li><a href="">south america</a></li>
+                        <li><a href="">north america</a></li>
+                        <li><a href="">artartica</a></li>
+                        <li><a href="">australia</a></li>
+                    </ul>
+                </li>
+                <li class="hover down"><a href="" class="dropa"><i class="fa-solid fa-thumbs-up"></i>world's best</a>
+                    <ul class="dropdown">
+                        <li><a href="">cities</a></li>
+                        <li><a href="">islands</a></li>
+
+                    </ul>
+                </li>
+                <li class="hover"><a href="" class="dropa"><i class="fa-solid fa-ship"></i>cruises</a></li>
+                <li class="hover down"><a href="" class="dropa"><i class="fa-solid fa-plane-departure"></i>planning
+                        tips</a>
+                    <ul class="dropdown">
+                        <li><a href="">weekend getaway</a></li>
+                        <li><a href="">family travel</a></li>
+                        <li><a href="">beach vacations</a></li>
+                        <li><a href="">destination of the year</a></li>
+
+                    </ul>
+                </li>
+                <li class="hover"><a href="" class="dropa"><i class="fa-solid fa-address-card"></i>about us</a></li>
+                <div class="buttons">
+                    <li class="hover fb"><a href="signup.html"><button>Sign up</button></a></li>
+                    <li class="hover sb"><a href="#"><button>Sign in</button></a></li>
+                </div>
+            </ul>
+            <!-- <div class="menudrop">
+                <div class="menu">
+                    <i class="fa-solid fa-bars"></i>
+                    <ul class="low">
+                        <li><a href="">signup</a></li>
+                        <li><a href="">signin</a></li>
+                    </ul>
+                </div>
+
+            </div> -->
+        </nav>
+    </div>
+
+
+    <div class="pla">
+
+        <div class="boy"><img src="destinations pic/sydney.webp" alt=""><br>
+            <h2>Sydney, Australia </h2>
+            <p>Sydney is the largest and most populous city in Australia and the state capital of New South Wales.
+                Sydney is located on Australia's south-east coast of the Tasman Sea. Inhabitants of Sydney are called
+                Sydneysiders, comprising a cosmopolitan and international population of people from numerous places
+                around the world.</p>
+        </div>
+        <div class="boy"><img src="destinations pic/seoul south korea.webp" alt="">
+            <h2>Seoul, south korea </h2>
+            <p>Seoul, officially the Seoul Special Metropolitan City, is the capital and largest metropolis of the
+                Republic of Korea (commonly known as South Korea). Seoul is the world's 16th largest city, and forms the
+                heart of the Seoul Capital Area, which includes the surrounding Incheon metropolis and Gyeonggi
+                province.</p>
+        </div>
+        <div class="boy"><img src="destinations pic/sanfrancisco califonia.webp" alt="">
+            <h2>San francisco, Califonia </h2>
+            <p>San Francisco, city and port, coextensive with San Francisco county, northern California, U.S., located
+                on a peninsula between the Pacific Ocean and San Francisco Bay. It is a cultural and financial centre of
+                the western United States and one of the country's most cosmopolitan cities.</p>
+        </div>
+
+
+        <div class="boy"><img src="destinations pic/queenstown-australia.webp" alt="">
+            <h2>Queenstown, New-Zealand</h2>
+            <p>World-renowned for its adventure, Queenstown is home to a huge choice of adrenaline activities including
+                jet boating. When the cooler months arrive Queenstown transforms into a world class winter resort, with
+                four ski areas and a range of activities, bars, restaurants and ways to relax and unwind.</p>
+        </div>
+        <div class="boy"><img src="destinations pic/paris-france.webp" alt="">
+            <h2>Paris, France</h2>
+            <p>It is known as the most romantic city in the world, and is home to some world famous sights that are
+                constantly shown in travel magazines, movies, and other works of art. Paris, the capital of France, has
+                a population of over two million people and is one of Europe's most-visited cities.</p>
+        </div>
+        <div class="boy"><img src="destinations pic/palermo italy.webp" alt="">
+            <h2>Palermo, Italy</h2>
+            <p>Palermo is a great base for exploring Sicily and several fascinating places make easy day trips from the
+                city. Visit the Roman site at Solunto, which you'll find perched above the coastal town of Porticello.
+                Seaside Mondello is another easy day out and combines beaches, good restaurants and fishing village
+                history.</p>
+        </div>
+
+
+        <div class="boy"><img src="destinations pic/istanbul.webp" alt="">
+            <h2>Istanbul, Turkey</h2>
+            <p>It is predominantly safe in Istanbul for tourists, whether solo travelers or family travelers. There are
+                some potential crimes and scams that you need to look out for during your stay. Turkish authorities are
+                aiding in preventing these petty crimes to keep tourism alive in the city.</p>
+        </div>
+        <div class="boy"><img src="destinations pic/cape-town-south-africa.webp" alt="">
+            <h2>Cape-Town, South-Africa</h2>
+            <p>Famous for its sun, sea and scenery, Cape Town is a beloved tourist destination for visitors the world
+                over. It's, therefore, no surprise that this coastal gem has been voted the best city in the world
+                seven-years-running!</p>
+        </div>
+        <div class="boy"><img src="destinations pic/barcelona-spain.webp" alt="">
+            <h2>Bacelona, Spain</h2>
+            <p>Overlooking the Mediterranean Sea, and famous for Gaudí and other Art Nouveau architecture, Barcelona is
+                one of Europe's trendiest cities. It's a hub of new trends in the world of culture, fashion and cuisine.
+                It combines the creativity of its artists and designers with respect and care for local traditions.</p>
+        </div>
+
+
+        <div class="boy"><img src="destinations pic/rome-italy.webp" alt="">
+            <h2>Rome, Italy</h2>
+            <p>The Metropolitan City of Rome, with a population of 4,355,725 residents, is the most populous
+                metropolitan city in Italy. Its metropolitan area is the third-most populous within Italy. Rome is
+                located in the central-western portion of the Italian Peninsula, within Lazio (Latium), along the shores
+                of the Tiber.</p>
+        </div>
+        <div class="boy"><img src="destinations pic/london-england.webp" alt="">
+            <h2>London, England</h2>
+            <p>Places like the Houses of Parliament with their famous bell Big Ben, Tower of London or St Paul's
+                Cathedral compete alongside modern wonders like the London Eye, Madame Tussauds or the Shard, for the
+                attention of the millions of tourists that visit them every year.</p>
+        </div>
+        <div class="boy"><img src="destinations pic/kyoto japan.webp" alt="">
+            <h2>Kyoto, Japan</h2>
+            <p>With over 1,200 years of history, Kyoto is home to beautiful natural scenery interwoven with historical
+                buildings and traditional architecture. At the same time, Kyoto is a city of learning and creation, with
+                a high concentration of cutting-edge universities, research institutions, and companies.</p>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <p>2023&copy;copyright bamidele obed aminu</p>
+    </footer>
+
+</body>
+
+</html>

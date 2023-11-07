@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Delius+Unicase&family=Lemonada&family=Lobster&family=Lobster+Two:wght@700&family=Nosifer&display=swap"
+        rel="stylesheet">
+    <title></title>
+    <style>
+        body {
+            background-image: url(lake-ultra-hd-4k-7f-1920x10801.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            overflow-x: hidden;
+            animation: index 15s ease-in-out 2s infinite alternate;
+        }
+
+        @keyframes index {
+            0% {
+                background-image: url(lake-ultra-hd-4k-7f-1920x10801.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+
+            25% {
+                background-image: url(Rustic-Fall-HD-Wallpaper.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+
+            75% {
+                background-image: url(woods.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+
+            100% {
+                background-image: url(woods.jfif);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+        }
+
+        .drop {
+            width: fit-content;
+            position: fixed;
+            top: 10px;
+            right: 30px;
+
+        }
+
+        .drop a {
+            text-decoration: none;
+            color: rgb(90, 207, 6);
+            font-family: 'Lemonada', cursive;
+            padding-right: 20px;
+            padding-left: 20px;
+
+
+
+        }
+
+        .drop li {
+
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-radius: 20px;
+            font-weight: bolder;
+
+
+
+        }
+
+        .low {
+            margin-top: 0px;
+        }
+
+        .drop li:hover {
+            background-color: rgba(190, 104, 18, 0.725);
+
+
+
+
+            /* width: 45px; */
+        }
+
+        .dro {
+            display: flex;
+            justify-content: flex-end;
+            width: fit-content;
+        }
+
+        .fa-bars {
+            font-size: 30px;
+            color: rgba(255, 157, 0, 0.605);
+            background: rgba(255, 255, 255, 0.712);
+            padding: 5px;
+            border-radius: 10px;
+
+        }
+
+        .dropdown {
+            display: none;
+            text-align: center;
+            width: fit-content;
+            height: fit-content;
+            padding: 10px;
+            border-radius: 20px;
+
+        }
+
+        .drop:hover .dropdown {
+            display: block;
+            /* padding: 10px 20px; */
+            top: 28px;
+            right: -13px;
+            justify-content: flex-end;
+            background: rgba(250, 106, 3, 0.416);
+            position: absolute;
+
+        }
+
+        header {
+
+            position: relative;
+            display: inline-block;
+            width: 50%;
+            left: 26%;
+            right: 0%;
+            top: 10%;
+            bottom: 0%;
+            color: rgb(233, 117, 16);
+            text-transform: uppercase;
+            font-family: 'Bungee Spice', sans-serif;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .ji {
+
+            width: 100%;
+            padding: ;
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+
+
+
+        }
+
+        .ji li {
+            margin: 20px;
+
+        }
+
+        .ji a {
+            text-decoration: none;
+            color: aliceblue;
+            text-transform: capitalize;
+            font-size: 30px;
+        }
+
+        main {
+
+            position: relative;
+            top: 40%;
+            right: 0%;
+            bottom: 0%;
+            left: 2%;
+        }
+
+        main h2 {
+            color: rgb(15, 240, 15);
+            font-size: 40px;
+            font-family: 'Lobster Two', sans-serif;
+
+        }
+
+        main p {
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: 500;
+            font-family: 'Lemonada', cursive;
+
+
+        }
+
+        main .lo {
+            margin: 0% 0% 0% 0%;
+
+        }
+
+        main section {
+            text-align: center;
+        }
+
+        main button {
+            background: rgba(15, 199, 240, 0.8);
+            border: 3px solid rgb(13, 84, 110);
+            border-radius: 20px;
+            padding: 10px 10px;
+            border-style: ridge;
+        }
+
+        main button:hover {
+            background: rgba(0, 72, 255, 0.7);
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        main a {
+            text-decoration: none;
+            color: black;
+            border-radius: 20px;
+            border: none;
+            padding: 1% 1%;
+
+        }
+
+
+        /* main a:hover{
+           
+            border: none;
+            padding: 1% 1%;
+            color: white;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="drop">
+        <div class="dro">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="dropdown">
+            <li><a href="signup.html">SIGNUP</a></li>
+            <li class="low"><a href="">SIGNIN</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <img src="" alt="">
+    </div>
+    <header>
+        <h1>welcome to <br>travel treasures</h1>
+    </header>
+
+    <main>
+        <section class="lo">
+            <h2>Explore Beautiful Places</h2>
+            <p>Discover breath taking destinations natural wonders, <br>
+                vibrant cities, and cultural marvels around the world.
+            </p>
+            <a href="">
+                <button>
+                    Discover more....
+                </button>
+            </a>
+
+        </section>
+
+        <section class="ti">
+            <h2>Plan Your Dreams Vacations</h2>
+            <p>Get expert tips and advice for the perfect getaway that <br>
+                will create unforgetable memories with our personalized <br> itineraries
+                and insider travel tips
+            </p>
+            <a href="main.html">
+                <button>
+                    Get started!
+                </button>
+            </a>
+
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>

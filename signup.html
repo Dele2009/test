@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Lemonada', cursive;
+            background-image: url(land2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            animation: body 15s ease-in-out 2s infinite alternate;
+        }
+
+        @keyframes body {
+            0% {
+                background-image: url(land2.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+
+            25% {
+                background-image: url(columbia-river-gorge-light-rays-4k-qk-3840x2160.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+
+            75% {
+                background-image: url(3k.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+
+            100% {
+                background-image: url(tree\ swamp.jfif);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+        }
+
+        div {
+            margin: 7% 0% 0% 40%;
+            width: fit-content;
+            /* background: red; */
+        }
+
+        table {
+            text-align: center;
+            width: fit-content;
+            /* background: white; */
+
+        }
+        .cho{
+            margin-right: 20px;
+        }
+
+        input[type="text"] {
+            width: 96%;
+            height: 50px;
+            border: none;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.533);
+            border-radius: 10px;
+            outline: none;
+            background: rgba(255, 255, 255, 0.5);
+
+            /* margin: 10%; */
+            padding-left: 13px;
+        }
+
+        input[type="email"],
+        input[type="password"],
+        input[type="number"] {
+            width: 100%;
+            height: 50px;
+            margin: 4% 0% 0% 0%;
+            border: none;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.533);
+            border-radius: 10px;
+            outline: none;
+            background: rgba(255, 255, 255, 0.5);
+            padding-left: 13px;
+        }
+
+        label {
+            font-weight: 500;
+            color: rgb(85, 255, 0);
+        }
+
+        select {
+            width: 50%;
+            border-radius: 20px;
+
+            padding: 10px 20px 10px 20px;
+            background: rgba(255, 255, 255, 0.605);
+            margin: 40px 0px 0px 0px;
+        }
+
+        button {
+            font-size: 20px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.76);
+            font-family: 'Lemonada', cursive;
+            margin: 45px 0px 0px 0px;
+            padding: 10px 150px;
+            border-radius: 10px;
+            border: 1px;
+            background: rgba(85, 255, 0, 0.714);
+        }
+
+        ::placeholder {
+            color: rgba(0, 0, 0, 0.695);
+            font-family: 'Lemonada', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table>
+
+            <tr>
+                <td><input type="text" placeholder="Input Fisrt Name" class="cho"></td>
+                <td><input type="text" placeholder="Input Last Name"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="email" placeholder="Enter email (joemax@example.com)"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="number" placeholder="Enter mobile number (+234-xxx-xxx)"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="password" placeholder="create password (!$&@3a%?)"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="">Select your country </label>
+                    <select name="" id="">
+                        <option value="">****No-selection****</option>
+                        <option value="">South Afica</option>
+                        <option value="">kenya</option>
+                        <option value="">Botswana</option>
+                        <option value="">Nigeria</option>
+                        <option value="">lesoto</option>
+                    </select>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="">Account type</label>
+                    <select name="" id="">
+                        <option value="">****No-selection****</option>
+                        <option value="">personal</option>
+                        <option value="">business</option>
+                        <option value="">Vacation</option>
+                        <option value="">Tourism</option>
+                    </select>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <a href="main.html">
+                        <button>
+                            Sign up
+                        </button>
+                    </a>
+                </td>
+                <td></td>
+
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
